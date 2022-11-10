@@ -1,0 +1,26 @@
+{
+  "name": "kingcatering",
+  "version": "1.0.0",
+  "description": "Pre-entrega 3, coderhouse. Catering Empresarial.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francormillan/ProyectoCoderEntrega3.git"
+  },
+  "author": "Francisco Millan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francormillan/ProyectoCoderEntrega3/issues"
+  },
+  "homepage": "https://github.com/francormillan/ProyectoCoderEntrega3#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
