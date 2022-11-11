@@ -1,0 +1,255 @@
+$color-1: rgb(192, 38, 200);
+$color-2: rgb(206, 116, 214); 
+$color-3: rgb(252, 190, 255);
+$color-4: rgb(70, 31, 63);
+
+html{
+    box-sizing: border-box;    
+    font-size: 62.55%; /** Reset para REMS de 16px:10px**/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    position: relative;
+    padding-bottom: 25rem;
+    padding-top: 5rem;
+    min-height: 100vh;
+}
+.active{
+    box-shadow: inset 100vh 0 0 0 $color-1 !important;
+    color: white !important;
+}
+
+img{max-width: 100%;}
+
+.no-margin{margin: 0;}
+
+h1{font-size: 3.8rem;}
+h2{font-size: 3.4rem;}
+h3{font-size: 3rem;}
+h4{font-size: 2.6rem;}
+
+a{
+    text-decoration: none;
+}
+
+.fw-300{font-weight: 300;}
+.fw-400{font-weight: 400;}
+.centrar{text-align: center; align-items: center;  justify-content: center}
+
+li{list-style: none;}
+
+.icon{transition: font-size .1s ease-in-out;
+        &:hover{font-size: 1.8rem;}
+        &:focus{font-size: 1.8rem;}
+        &-seccion{font-size: 6rem;}
+}
+
+.line{
+    height: 0.2rem; 
+    width: 50%; 
+    background-color: $color-2; 
+    margin: 1rem 0 1rem 0;
+}
+.site-header{
+    background-color: $color-3;
+    padding: 0rem 0 0rem 0rem;
+}
+
+.img-header{
+    background-color: rgb(86, 86, 86);
+    background-image: url("/media/img/1.jpg")!important;
+    background-position: left center;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    min-height: 60rem;
+    padding: 0;
+}
+
+.content-header{
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-header{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 0 8rem 2rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.200) 0%, rgba(0,0,0,0.650) 35%, rgba(255,255,255,0) 60%);
+}
+
+.logo{
+    a{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+/**NAVEGACION**/
+
+.barra-header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+}
+.navbar-nav{
+    background-color: rgba(255, 255, 255, 0.852);
+
+}
+
+.link-nav{ 
+    box-shadow: inset 0 0 0 0 $color-2;
+    color: $color-4;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: color .3s, box-shadow .3s ease-in-out;
+    
+    &:hover{
+    box-shadow: inset 100vh 0 0 0 $color-2;
+    color: rgb(46, 46, 46) !important;
+    text-decoration: none;
+    }
+
+    &:focus{
+        box-shadow: inset 100vh 0 0 0 $color-2;
+        color: rgb(46, 46, 46);
+        text-decoration: none;
+    }
+}
+
+
+.brand{
+    color: $color-2;
+    transition: color .5s;
+
+    &:hover{
+        color:$color-4;
+    }
+}
+
+.bg-style{
+    background-color: rgba(255, 255, 255, 0.645);
+    padding: 1rem;
+    max-width: 90%;
+    border-radius: 2rem;
+}
+/**CONTENIDO1**/
+
+.close {
+    font-size: 1.5rem;
+  }
+  
+  .galery {
+    
+    img {
+        opacity: 0.7;
+        cursor: pointer;
+        margin: 2rem;
+        width: 90%;
+
+        &:hover {
+            opacity: 1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+  }
+
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+
+    &-servicios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem;
+        flex-basis: calc(33,3% - 1rem);
+        text-align: center;
+    }
+}
+section{
+    h2 {
+    color: $color-2;
+    margin: 0;
+    }
+    h3 {
+        color: $color-2;
+        margin: 0;
+        }
+}
+
+.imagen-contenido{
+    position: relative;
+}
+
+main{
+    h3{
+        color: $color-2;
+        margin: 0;
+    }
+}
+
+/**footer**/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+}
+.copyright{
+    align-items: baseline;
+    margin-top: 5rem;
+    height: 8rem;
+    padding-top: 3rem;
+    color: $color-1;
+    background-color: black;
+}
+
+form{
+    margin: 0 20rem 0 20rem;
+    
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        line-height: 3;
+}
+}
+.boton{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-color: white;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    background-color: $color-3;
+    color: $color-4;
+    transition: color .3s, background-color .3s, width .3s, height .3s;
+
+&:hover{
+    width: 120px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: $color-1;
+}
+}
